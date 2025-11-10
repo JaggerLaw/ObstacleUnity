@@ -1,0 +1,41 @@
+# =============== #
+# Unity generated #
+# =============== #
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+Packages/com.unity.package-manager/
+
+# =============== #
+# OS generated #
+# =============== #
+.DS_Store
+Thumbs.db
+
+# =============== #
+# Visual Studio / Rider #
+# =============== #
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+
+# =============== #
+# Auto generated #
+# =============== #
+*.apk
+*.aab
+*.unitypackage

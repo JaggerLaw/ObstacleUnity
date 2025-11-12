@@ -668,9 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47fd17e2aa1eaf94e8966a7f804baf91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Movement
-  movementX: 0
-  movementY: 0
-  movementZ: 1
+  speedValue: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

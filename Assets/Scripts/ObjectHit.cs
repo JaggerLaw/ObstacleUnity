@@ -6,10 +6,10 @@ public class ObjectHit : MonoBehaviour
     public Color meshColor = new Color(0.6588f, 0.1411f, 0.1451f, 1f);
     void OnCollisionEnter(Collision collision)
     {
-        if (!collision.gameObject.CompareTag("Hit"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            gameObject.tag = "Hit";
             GetComponent<MeshRenderer>().material.color = meshColor;
+            gameObject.tag = "Hit";
         }
     }
 }

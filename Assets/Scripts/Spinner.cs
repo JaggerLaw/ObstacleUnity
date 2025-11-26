@@ -13,6 +13,6 @@ public class Spinner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.Rotate(xSpin, ySpin, zSpin);
+        transform.Rotate(xSpin, ySpin, zSpin);
     }
 }

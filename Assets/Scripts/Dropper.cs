@@ -17,8 +17,6 @@ public class Dropper : MonoBehaviour
     void Update()
     {
         timeSinceGameStart = Time.time;
-        Debug.Log("The time has elapsed");
-        Debug.Log(timeSinceGameStart + "Seconds");
 
         if(timeSinceGameStart >= timeForFall)
         {

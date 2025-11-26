@@ -17,7 +17,10 @@ public class scorer : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        score++;
-        Debug.Log("You've hit something " + score + " times");
+        if (!collision.gameObject.CompareTag("Hit"))
+        {    
+            score++;
+            Debug.Log("You've hit something " + score + " times");
+        }
     }
 }

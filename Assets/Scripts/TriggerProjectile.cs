@@ -5,8 +5,6 @@ public class TriggerProjectile : MonoBehaviour
     [SerializeField] GameObject projectile;
     [SerializeField] GameObject projectile1;
     [SerializeField] GameObject projectile2;
-    [SerializeField] GameObject projectile3;
-    [SerializeField] GameObject projectile4;
     void OnTriggerEnter(Collider other)
     {
         if (projectile != null)
@@ -14,10 +12,16 @@ public class TriggerProjectile : MonoBehaviour
             if (other.gameObject.CompareTag("Player"))
             {
                 projectile.SetActive(true);
-                projectile1.SetActive(true);
-                projectile2.SetActive(true);
-                projectile3.SetActive(true);
-                projectile4.SetActive(true);
+                
+                if(projectile1 != null)
+                {
+                    projectile1.SetActive(true);
+                }
+                
+                if(projectile2 != null)
+                {
+                    projectile2.SetActive(true);
+                }
             }
         }
 

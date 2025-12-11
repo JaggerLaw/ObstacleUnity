@@ -7,7 +7,12 @@ public class FlyAtPlayer : MonoBehaviour
     Vector3 playerPos;
     public float speedOfProjectile = 20.0f;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //awake is called before start, to make sure the position is the latest position setActive is moved to here Awake
+    void Awake()
+    {
+        gameObject.SetActive(false);
+    }
+
     void Start()
     {
         playerPos = player.transform.position;

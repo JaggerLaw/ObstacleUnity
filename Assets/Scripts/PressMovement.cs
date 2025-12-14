@@ -3,14 +3,13 @@ using UnityEngine;
 
 public class PressMovement : MonoBehaviour
 {
-    Vector3 pressPos;
-    [SerializeField] float speed = -1.0f;
+    [SerializeField] float yTransformVal = 2.0f;
+    Vector3 startingPosition;
     bool down = true;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        pressPos = transform.position;
-        Debug.Log("PressPosition: " + pressPos);
+        startingPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -23,14 +22,14 @@ public class PressMovement : MonoBehaviour
                 down = false;
             }
 
-            transform.Translate(0, -1 * speed * Time.deltaTime, 0);
+            transform.Translate(0, -yTransformVal * Time.deltaTime, 0);
         } else
         {
-            if(transform.position.y > 6)
+            if(transform.position.y > startingPosition.y)
             {
                 down = true;
             }
-            transform.Translate(0, speed * Time.deltaTime, 0);
+            transform.Translate(0, yTransformVal * Time.deltaTime, 0);
 
         }
     }

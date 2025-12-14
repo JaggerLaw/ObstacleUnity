@@ -22,6 +22,7 @@ public class TriggerProjectile : MonoBehaviour
                 {
                     projectile2.SetActive(true);
                 }
+                Destroy(gameObject);
             }
         }
 
